@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+
+* {
+	margin: 0px;
+	font-family: 'Montserrat', sans-serif;
+}
+body {
+	text-align: center;
+	background-color: #333333;
+	color: #ffffff;
+}
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+.info {
+	padding: 20px 0px 10px 0px;
+	font-weight: 600;
+}
+code {
+	font-family: 'Courier Prime',	monospace;
+	background-color: #222222;
+	padding: 3px;
+	border-radius: 3px;
+}
+nav {
+	padding: 20px;
+	background-color: #222222;
+	box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.1);
+	margin-bottom: 80px;
+	margin-top: 20px;
+}
+.nav-toggle {
+	font-size: 30px;
+	border: 0px;
+	background-color: #222222;
+	color: #ffffff;
+	display: none;
+	cursor: pointer;
+}
+.logo {
+	max-width: 130px;
+}
+li {
+	list-style: none;
+}
+.nav-center,
+.nav-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.links,
+.social-icons {
+	display: flex;
+	justify-content: space-between;
+}
+.links {
+	width: 300px;
+	height: auto;
+}
+.social-icons {
+	width: 200px;
+}
+.footer-menu {
+	text-decoration: underline;
+	font-size: 13px;
+}
+@media only screen and (max-width: 740px) {
+	.nav-toggle {
+		display: flex;
+	}
+	.social-icons {
+		display: none;
+	}
+	.nav-center,
+	.links {
+		flex-direction: column;
+	}
+	.links {
+		width: 100%;
+		text-align: right;
+		margin-right: 10px;
+		height: auto;
+		height: 0;
+		overflow: hidden;
+	}
+	.show-links {
+		height: 10rem;
+	}
+	.links.show-links {
+		padding: 10px;
+	}
+	.nav-header {
+		width: 100%;
+	}
+}
