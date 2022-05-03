@@ -80,8 +80,6 @@ li {
 	}
 	.links {
 		width: 100%;
-		text-align: right;
-		margin-right: 10px;
 		height: auto;
 		height: 0;
 		overflow: hidden;
